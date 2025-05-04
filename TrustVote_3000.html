@@ -53,7 +53,7 @@
             color: #333;
             text-align: center;
         }
-        h2, h3 {
+        h2, h3, h4 {
             color: #444;
             border-bottom: 1px solid #007BFF;
             padding-bottom: 5px;
@@ -71,7 +71,7 @@
             top: -60px;
             visibility: hidden;
         }
-        h2:target, h3:target {
+        h2:target, h3:target, h4:target {
             visibility: visible;
         }
         img {
@@ -90,6 +90,16 @@
             margin-top: 30px;
             font-weight: bold;
             font-size: 1.2em;
+        }
+        .slogan-callout {
+            background-color: #e7f3ff;
+            border-left: 5px solid #007BFF;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.1em;
+            color: #333;
         }
         @media (max-width: 768px) {
             body {
@@ -125,10 +135,10 @@
                     <li><a href="#ethics-charter">Universal Voter Ethics Charter</a></li>
                 </ul>
             </li>
+            <li><a href="#qanda">Common Questions from Reform Advocates</a></li>
             <li><a href="#benefits">Benefits</a></li>
             <li><a href="#implementation">Implementation Plan</a></li>
             <li><a href="#advocacy">Advocacy and Next Steps</a></li>
-            <li><a href="#qanda">Q&A for Reform Groups</a></li>
             <li><a href="#conclusion">Conclusion</a></li>
         </ul>
     </div>
@@ -137,6 +147,9 @@
 
         <h2 id="introduction">Introduction</h2>
         <p>In an era of declining trust in democratic institutions, TrustVote 3000 offers a transformative solution to restore confidence, eliminate fraud, and align governance with voter priorities. With 40% of global voters questioning election integrity in 2024 (Gallup), and emotional campaigns overshadowing policy substance, democracy faces a crisis of legitimacy. TrustVote 3000 addresses these challenges through a secure, transparent, and policy-driven voting system that empowers informed participation, leverages AI for objective insights, and prepares for a future where autonomous AI may play civic roles. Designed for accessibility and scalability, it combines voter education, dynamic policy matching, blockchain transparency, and a Universal Voter Ethics Charter to ensure fair, indisputable elections.</p>
+        <div class="slogan-callout">
+            “TrustVote 3000: Where Policy Decides, Not Personalities.”
+        </div>
 
         <h2 id="problem">The Problem</h2>
         <p>Elections are plagued by distrust, misinformation, and misalignment. Key issues include:</p>
@@ -158,7 +171,9 @@
         </ul>
 
         <h2 id="design">System Design</h2>
-        <p>TrustVote 3000 comprises six core components, each addressing specific democratic challenges:</p>
+        <p>TrustVote 3000 comprises seven core components, each addressing specific democratic challenges. The diagram below provides a high-level overview:</p>
+        <!-- Added System Design Infographic -->
+        <img src="system_design.png" alt="Circular infographic of TrustVote 3000 System Design, showing 7 interconnected components: Voter Readiness Certificate, Unified Digital Identity, Dynamic PolicyMatch, PlatformEval AI, Symbolic AI Votes, Blockchain + Paper Transparency, and Universal Voter Ethics Charter.">
 
         <h3 id="voter-readiness">1. Voter Readiness Certificate</h3>
         <p><strong>Purpose</strong>: Ensures voters have minimal civic literacy to make informed choices, reducing ignorance without elitism.</p>
@@ -173,13 +188,12 @@
         <p><strong>Privacy</strong>: Biometric data stays local, addressing privacy concerns, with a public “privacy pledge” in transparency reports.</p>
 
         <h3 id="policymatch">3. Dynamic PolicyMatch</h3>
+        <img src="flowchart.png" alt="Dynamic PolicyMatch Flowchart showing the process from question bank to vote casting and post-vote report">
         <p><strong>Purpose</strong>: Aligns votes with policy priorities, reducing superficial voting.</p>
         <p><strong>Process</strong>: Voters answer questions drawn from a bank of 50-100, covering all party mandates (e.g., “Should dental care be free?”) and counterpoints (e.g., “If funded by taxes?”). Core Mode (10-15 questions) ensures accessibility; Full Policy Mode (50-100) offers depth. Questions are themed (e.g., economy, healthcare) and saved over a week-long voting period.</p>
         <p><strong>Mechanics</strong>: Responses assign points to parties based on platform alignment (e.g., “Yes” to tax cuts gives +2 to PPC). Ties are resolved with 3-5 secondary questions, minimizing bias.</p>
         <p><strong>Accessibility</strong>: Mobile polling stations, audio questions, and simplified versions (5 questions) ensure inclusivity.</p>
         <p><strong>Outcome</strong>: Votes reflect policy resonance, with post-vote reports explaining alignments (e.g., “You voted PPC due to tax cut priority”).</p>
-        <p>The flowchart below illustrates the Dynamic PolicyMatch process:</p>
-        <img src="flowchart.png" alt="Dynamic PolicyMatch Flowchart showing the process from question bank to vote casting and post-vote report">
 
         <h3 id="platformeval">4. PlatformEval AI</h3>
         <p><strong>Purpose</strong>: Provides objective analysis of party platforms to inform voters.</p>
@@ -196,6 +210,10 @@
         <p><strong>Purpose</strong>: Sparks post-election policy discussion without influencing voters, normalizing AI in civic life.</p>
         <p><strong>Process</strong>: Unbiased AIs (verified for open-source reasoning) analyze platforms for feasibility, impact, and societal benefit, casting honorary votes per riding or nationally. Votes are sealed on the blockchain and revealed post-results with explanations (e.g., “AI-1 voted PPC for $50B savings”).</p>
         <p><strong>Safeguards</strong>: AIs have no voter data access, and votes are symbolic, addressing slippery slope risks. An AI Policy Forum post-election encourages public debate.</p>
+        <!-- Expanded Vision 2035 -->
+        <h4>Vision 2035: AI as a Civic Partner</h4>
+        <p>By 2035, TrustVote 3000 envisions a democracy where AI serves as a trusted civic partner, augmenting human decision-making without overriding it. Building on the symbolic AI votes piloted in 2025, TrustVote aims to introduce limited AI advisory roles in citizen assemblies. AIs, guided by the Universal Voter Ethics Charter, could propose policy optimizations—such as reducing healthcare wait times by 10% through regional hubs or optimizing carbon taxes to balance economic growth with emissions targets—backed by data-driven simulations (e.g., “$1.2B GDP boost, 15% emissions cut”). These proposals would be debated and voted on by human assemblies, ensuring democratic control.</p>
+        <p>This vision extends to broader governance. AIs could participate in “Policy Simulation Labs,” where they model long-term impacts of legislation (e.g., “Universal Basic Income: 20% poverty reduction, 5% inflation rise over 10 years”), providing lawmakers with predictive insights. Public trust would be maintained through transparency: all AI reasoning would be open-source, audited annually, and subject to public forums like the AI Policy Forum. By integrating AI responsibly, TrustVote 3000 ensures democracy evolves with technology, fostering a future where human values and AI capabilities coexist harmoniously.</p>
         <p><strong>Future Vision</strong>: Prepares for autonomous AI’s civic role, with an annual AI in Democracy Report tracking alignment with human outcomes.</p>
 
         <h3 id="transparency">6. Blockchain + Paper Transparency</h3>
@@ -221,34 +239,7 @@
         <p><strong>Enforcement</strong>: Humans pledge via the Voter Readiness Certificate; AIs are verified by the independent commission. Future autonomous AIs would comply as a condition of voting rights.</p>
         <p><strong>Impact</strong>: Builds a foundation for AI’s civic integration without double standards.</p>
 
-        <h2 id="benefits">Benefits</h2>
-        <p>TrustVote 3000 transforms democracy by:</p>
-        <ul>
-            <li><strong>Policy-Driven Governance</strong>: Aligns outcomes with voter priorities, reducing emotional manipulation.</li>
-            <li><strong>Voter Empowerment</strong>: Education (Voter Readiness Certificate, PlatformEval AI) and post-vote reports foster engagement.</li>
-            <li><strong>Fraud Elimination</strong>: Blockchain, paper backups, and audits ensure indisputable results.</li>
-            <li><strong>Inclusivity</strong>: Low-tech options, accommodations, and mobile polling stations include all voters, countering suppression concerns.</li>
-            <li><strong>Future-Readiness</strong>: Symbolic AI votes and the Voter Ethics Charter prepare for autonomous AI.</li>
-            <li><strong>Bipartisan Appeal</strong>: Transparency appeals to conservatives; education and accessibility to progressives.</li>
-        </ul>
-
-        <h2 id="implementation">Implementation Plan</h2>
-        <p><strong>Pilot Program</strong>: Test in local elections (e.g., municipal votes in Austin, Toronto) with civic tech partners. Assess voter engagement, accessibility, and transparency over 1-2 election cycles.</p>
-        <p><strong>Public-Private Funding</strong>: Partner with tech firms and foundations to fund pilots, leveraging savings from fraud prevention for long-term adoption.</p>
-        <p><strong>Public Campaign</strong>: Frame the Voter Readiness Certificate as empowerment via videos and infographics. Simplify UDI messaging (e.g., “Like a secure library card”).</p>
-        <p><strong>Continuous Improvement</strong>: An independent commission reviews pilot data, incorporating public feedback to refine the system.</p>
-
-        <h2 id="advocacy">Advocacy and Next Steps</h2>
-        <p>TrustVote 3000 is poised to engage reform advocates, civic tech innovators, and AI ethics circles. Next steps:</p>
-        <ul>
-            <li><strong>Reform Groups</strong>: Pitch to FairVote, Brennan Center, or similar organizations, emphasizing voter empowerment and transparency.</li>
-            <li><strong>Civic Tech</strong>: Present to accelerators (e.g., Y Combinator’s public good track) as a scalable platform, with the TrustVote app as a SaaS product.</li>
-            <li><strong>AI Ethics</strong>: Engage groups like the IEEE to discuss the Voter Ethics Charter and AI’s civic role.</li>
-            <li><strong>Public Engagement</strong>: Share via an X post targeting #ElectionReform, #CivicTech, and #AIinGovernance, linking to this GitHub-hosted pitch.</li>
-            <li><strong>Supporting Assets</strong>: Develop a PolicyMatch flowchart and simulated Q&A for reform group pitches (pending confirmation).</li>
-        </ul>
-
-        <h2 id="qanda">Q&A for Reform Groups, Activists, and Party Members</h2>
+        <h2 id="qanda">Common Questions from Reform Advocates</h2>
         <h3>1. How does the Voter Readiness Certificate avoid voter suppression?</h3>
         <p>The Voter Readiness Certificate ensures informed participation without elitism. It’s a free, middle-school-level test (e.g., “What does the Prime Minister do?”) available in multiple languages, with audio, braille, and unlimited retakes. Waivers and proxy assistance cater to accessibility needs, ensuring no voter is excluded. Pilots will track participation to confirm inclusivity, addressing concerns about marginalized groups.</p>
 
@@ -269,6 +260,39 @@
 
         <h3>7. How does TrustVote 3000 appeal to both activists and party leaders?</h3>
         <p>Activists value its focus on voter empowerment, policy-driven outcomes, and transparency, addressing distrust in elections. Party leaders benefit from votes aligning with platforms, reducing emotional manipulation, while the flowchart shows a clear, fair process. Bipartisan appeal—transparency for conservatives, education for progressives—ensures broad support.</p>
+
+        <h2 id="benefits">Benefits</h2>
+        <p>TrustVote 3000 transforms democracy by:</p>
+        <ul>
+            <li><strong>Policy-Driven Governance</strong>: Aligns outcomes with voter priorities, reducing emotional manipulation.</li>
+            <li><strong>Voter Empowerment</strong>: Education (Voter Readiness Certificate, PlatformEval AI) and post-vote reports foster engagement.</li>
+            <li><strong>Fraud Elimination</strong>: Blockchain, paper backups, and audits ensure indisputable results. Globally, election disputes and manual recounts cost an estimated $5 billion annually (World Bank, 2023); TrustVote 3000’s fraud prevention offers a significant return on investment.</li>
+            <li><strong>Inclusivity</strong>: Low-tech options, accommodations, and mobile polling stations include all voters, countering suppression concerns.</li>
+            <li><strong>Future-Readiness</strong>: Symbolic AI votes and the Voter Ethics Charter prepare for autonomous AI.</li>
+            <li><strong>Bipartisan Appeal</strong>: Transparency appeals to conservatives; education and accessibility to progressives.</li>
+        </ul>
+
+        <h2 id="implementation">Implementation Plan</h2>
+        <p><strong>Pilot Program</strong>: Test in local elections (e.g., municipal votes in Austin, Toronto) with civic tech partners. Assess voter engagement, accessibility, and transparency over 1-2 election cycles.</p>
+        <p><strong>Timeline</strong>:</p>
+        <ul>
+            <li><strong>Year 1: Pilot Launch</strong> – Deploy in 2-3 municipalities, focusing on voter education and transparency metrics.</li>
+            <li><strong>Year 2: Independent Audit + Feedback</strong> – Conduct risk-limiting audits, gather public feedback, and refine the system.</li>
+            <li><strong>Years 3-5: Scale-Up</strong> – Expand to regional elections, incorporating lessons from pilots, with broader public campaigns.</li>
+        </ul>
+        <p><strong>Public-Private Funding</strong>: Partner with tech firms and foundations to fund pilots, leveraging savings from fraud prevention for long-term adoption.</p>
+        <p><strong>Public Campaign</strong>: Frame the Voter Readiness Certificate as empowerment via videos and infographics. Simplify UDI messaging (e.g., “Like a secure library card”).</p>
+        <p><strong>Continuous Improvement</strong>: An independent commission reviews pilot data, incorporating public feedback to refine the system.</p>
+
+        <h2 id="advocacy">Advocacy and Next Steps</h2>
+        <p>TrustVote 3000 is poised to engage reform advocates, civic tech innovators, and AI ethics circles. Next steps:</p>
+        <ul>
+            <li><strong>Reform Groups</strong>: Pitch to FairVote, Brennan Center, or similar organizations, emphasizing voter empowerment and transparency.</li>
+            <li><strong>Civic Tech</strong>: Present to accelerators (e.g., Y Combinator’s public good track) as a scalable platform, with the TrustVote app as a SaaS product.</li>
+            <li><strong>AI Ethics</strong>: Engage groups like the IEEE to discuss the Voter Ethics Charter and AI’s civic role.</li>
+            <li><strong>Public Engagement</strong>: Share via an X post targeting #ElectionReform, #CivicTech, and #AIinGovernance, linking to this GitHub-hosted pitch.</li>
+            <li><strong>Supporting Assets</strong>: The PolicyMatch flowchart, System Design infographic, and Q&A section address common concerns for reform group pitches.</li>
+        </ul>
 
         <h2 id="conclusion">Conclusion</h2>
         <p>TrustVote 3000 reimagines democracy as policy-driven, transparent, and inclusive, addressing today’s distrust while preparing for AI’s future. By empowering voters, eliminating fraud, and unifying ethical standards, it offers a blueprint for resilient governance. Join the movement to pilot TrustVote 3000 and rebuild democracy for the 21st century.</p>
