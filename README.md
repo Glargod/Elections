@@ -8,3 +8,5 @@ TrustVote 3000 is a secure, transparent, policy-driven voting system. Key featur
 [Read the full proposal](TrustVote_3000.html) for details.
 
 Join the movement! 🗳️ #ElectionReform #VoterRights #CivicTech #Democracy #AIinGovernance #PolicyMatters
+
+[Read the Q&A for reform groups](qanda.md) to address common concerns.
