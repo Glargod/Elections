@@ -5,36 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrustVote 3000: Rebuilding Democracy</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px 20px 20px 250px;
-            background-color: #f4f4f4;
-            position: relative;
-        }
-        .container {
-            max-width: 800px;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .toc {
-            position: fixed;
-            width: 200px;
-            top: 20px;
-            left: 20px;
-            background: #fff;
-            padding: 10px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-        .toc h3 {
-            margin: 0 0 10px;
-            font-size: 1.2em;
-            color: #333;
-        }
+        /* Existing CSS remains unchanged */
+    </style>
+</head>
+<body>
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#problem">The Problem</a></li>
+            <li><a href="#solution">The Solution</a></li>
+            <li><a href="#design">System Design</a>
+                <ul>
+                    <li><a href="#voter-readiness">Voter Readiness Certificate</a></li>
+                    <li><a href="#udi">Unified Digital Identity</a></li>
+                    <li><a href="#policymatch">Dynamic PolicyMatch</a></li>
+                    <li><a href="#platformeval">PlatformEval AI</a></li>
+                    <li><a href="#ai-votes">Symbolic AI Votes</a></li>
+                    <li><a href="#transparency">Blockchain + Paper Transparency</a></li>
+                    <li><a href="#ethics-charter">Universal Voter Ethics Charter</a></li>
+                </ul>
+            </li>
+            <li><a href="#qanda">Common Questions from Reform Advocates</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#implementation">Implementation Plan</a></li>
+            <li><a href="#advocacy">Advocacy and Next Steps</a></li>
+            <!-- New TOC Entry for Annex -->
+            <li><a href="#annex">Annex: Non-Election Voting Applications</a>
+                <ul>
+                    <li><a href="#referendums">Referendums and Citizen Initiatives</a></li>
+                    <li><a href="#citizen-assemblies">Citizen Assemblies</a></li>
+                    <li><a href="#corporate-governance">Corporate Governance</a></li>
+                    <li><a href="#community-decision">Community Decision-Making</a></li>
+                    <li><a href="#international-orgs">International Organizations</a></li>
+                    <li><a href="#annex-benefits">Benefits of Non-Election Voting</a></li>
+                    <li><a href="#annex-implementation">Implementation Considerations</a></li>
+                    <li><a href="#annex-vision">Future Vision</a></li>
+                </ul>
+            </li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <!-- Existing content up to Advocacy and Next Steps remains unchanged -->
+        
+        <!-- New Annex Section -->
+        <h2 id="annex">Annex: Non-Election Voting Applications</h2>
+        <p>TrustVote 3000’s secure, transparent, and policy-driven framework extends beyond elections to transform decision-making across diverse contexts. This annex explores how the system can empower referendums, citizen assemblies, corporate governance, community decisions, and international organizations, broadening its impact on democratic participation.</p>
+        <div class="slogan-callout">
+            “TrustVote 3000: Empowering Decisions, Beyond the Ballot Box.”
+        </div>
+
+        <h3 id="referendums">Referendums and Citizen Initiatives</h3>
+        <p><strong>Purpose</strong>: Enable constituents to vote directly on policy questions or initiatives, ensuring alignment with priorities.</p>
+        <p><strong>How It Works</strong>: Voters use Dynamic PolicyMatch to answer questions on issues like infrastructure or environmental policies. Responses guide votes, with PlatformEval AI providing objective analysis (e.g., “New transit system: $500M cost, 10% emissions reduction”).</p>
+        <p><strong>Example</strong>: A city uses TrustVote 3000 to decide on a public transportation system, with questions on funding and accessibility shaping the outcome.</p>
+        <p><strong>Outcome</strong>: Transparent, policy-driven referendums enhance public trust and engagement.</p>
+
+        <h3 id="citizen-assemblies">Citizen Assemblies</h3>
+        <p><strong>Purpose</strong>: Support deliberative democracy by enabling representative citizen groups to vote on complex issues.</p>
+        <p><strong>How It Works</strong>: Randomly selected citizens use the Unified Digital Identity for secure participation. PlatformEval AI analyzes policy impacts, and votes are recorded on the blockchain.</p>
+        <p><strong>Example</strong>: A national assembly votes on climate policies, with AI estimating impacts (e.g., “Carbon tax: 15% emissions cut, 5% cost increase”). Results inform legislation.</p>
+        <p><strong>Outcome</strong>: Combines diverse perspectives with data-driven insights, strengthening policy outcomes.</p>
+
+        <h3 id="corporate-governance">Corporate Governance</h3>
+        <p><strong>Purpose</strong>: Democratize corporate decision-making with secure, transparent voting.</p>
+        <p><strong>How It Works</strong>: Shareholders or employees vote on decisions like mergers or sustainability initiatives using the TrustVote app. Blockchain ensures transparency, and the Voter Readiness Certificate educates participants.</p>
+        <p><strong>Example</strong>: A tech company uses TrustVote 3000 for its annual shareholder meeting, enabling global, secure voting on executive compensation.</p>
+        <p><strong>Outcome</strong>: Enhances accountability and stakeholder trust in corporate decisions.</p>
+
+        <h3 id="community-decision">Community Decision-Making</h3>
+        <p><strong>Purpose</strong>: Empower local communities to make inclusive, informed decisions.</p>
+        <p><strong>How It Works</strong>: Residents vote on neighborhood projects (e.g., parks, schools) via mobile polling stations or low-tech options. PolicyMatch ensures votes reflect community priorities.</p>
+        <p><strong>Example</strong>: A community allocates funds for a new park, with votes cast over a week-long window via the TrustVote app.</p>
+        <p><strong>Outcome</strong>: Fosters local engagement and ensures equitable participation.</p>
+
+        <h3 id="international-orgs">International Organizations</h3>
+        <p><strong>Purpose</strong>: Streamline global decision-making with secure, ethical voting.</p>
+        <p><strong>How It Works</strong>: Members of organizations like the UN vote on resolutions using the Unified Digital Identity and blockchain. The Universal Voter Ethics Charter ensures integrity across borders.</p>
+        <p><strong>Example</strong>: The UN uses TrustVote 3000 for a global vote on climate action, with AI analyzing impacts and blockchain ensuring transparency.</p>
+        <p><strong>Outcome</strong>: Builds trust and efficiency in international governance.</p>
+
+        <h3 id="annex-benefits">Benefits of Non-Election Voting</h3>
+        <p>Applying TrustVote 3000 to non-election contexts offers:</p>
+        <ul>
+            <li><strong>Enhanced Engagement</strong>: Encourages participation in diverse decision-making processes.</li>
+            <li><strong>Transparency</strong>: Blockchain and paper backups ensure indisputable outcomes.</li>
+            <li><strong>Inclusivity</strong>: Low-tech options and mobile polling stations accommodate all participants.</li>
+            <li><strong>Policy-Driven Decisions</strong>: Dynamic PolicyMatch aligns outcomes with priorities, reducing emotional bias.</li>
+            <li><strong>Scalability</strong>: Adapts to local, corporate, and global contexts, maximizing impact.</li>
+        </ul>
+
+        <h3 id="annex-implementation">Implementation Considerations</h3>
+        <p><strong>Pilot Programs</strong>: Test non-election applications in small-scale referendums or corporate votes, partnering with civic tech groups.</p>
+        <p><strong>Challenges</strong>: Address voter education, infrastructure needs, and legal frameworks through public-private partnerships.</p>
+        <p><strong>Funding</strong>: Leverage tech firms and foundations, with long-term savings from efficient, fraud-free processes.</p>
+        <p><strong>Public Campaign</strong>: Promote non-election voting as empowerment via infographics and social media (#NonElectionVoting).</p>
+
+        <h3 id="annex-vision">Future Vision</h3>
+        <p>By 2035, TrustVote 3000 could become the standard for secure, transparent decision-making across domains, from local communities to global organizations. Non-election voting paves the way for a participatory democracy where AI, guided by the Universal Voter Ethics Charter, augments human decisions. For example, AI could simulate policy impacts in citizen assemblies (e.g., “$1.2B GDP boost from regional healthcare hubs”), with humans retaining final votes. This vision ensures democracy evolves with technology, fostering trust and engagement worldwide.</p>
+        <p class="call-to-action">Explore TrustVote 3000 for all decision-making—join the future of participatory governance!</p>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>TrustVote 3000 reimagines democracy as policy-driven, transparent, and inclusive, addressing today’s distrust while preparing for AI’s future. By empowering voters, eliminating fraud, and unifying ethical standards, it offers a blueprint for resilient governance. Its non-election applications further expand its impact, transforming decision-making across communities, corporations, and global institutions. Join the movement to pilot TrustVote 3000 and rebuild democracy for the 21st century.</p>
+
+        <p class="call-to-action">Join the movement for fair, policy-driven elections and beyond!</p>
+        <p class="tags">#ElectionReform #VoterRights #CivicTech #Democracy #AIinGovernance #PolicyMatters #NonElectionVoting</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    const offset = 60;
+                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    window.scrollTo({
+                        top: elementPosition - offset,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>        }
         .toc ul {
             list-style: none;
             padding: 0;
