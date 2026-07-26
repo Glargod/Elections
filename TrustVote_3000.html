@@ -204,6 +204,7 @@
             <li><strong>Uninformed Voting</strong>: Many voters lack basic civic literacy, swayed by ads or charisma rather than policy trade-offs (e.g., healthcare costs vs. tax cuts).</li>
             <li><strong>Emotional Campaigns</strong>: Parties prioritize identity and tribalism, obscuring substantive issues and leaving governance disconnected from voter priorities.</li>
             <li><strong>Technological Risks</strong>: As AI and digital systems reshape civic life, current voting systems lack frameworks to integrate emerging technologies responsibly.</li>
+            <li><strong>Source-List & Chain-of-Custody Weaknesses</strong>: Public records show large numbers of non-citizens appearing on jury-summons lists drawn from the same databases (driver’s licenses, tax records, voter rolls) that feed voter registration. While this does not prove illegal voting, it demonstrates structural risk: databases that do not cleanly separate citizens from non-citizens are used for both jury eligibility and voter rolls. This creates two related vulnerabilities — ineligible people remaining on active rolls, and the possibility of ballots being requested or cast under those names without the listed person’s knowledge or consent. Ballot secrecy, while essential, makes individual attribution after the fact nearly impossible, so safeguards must operate upstream (clean rolls, strong eligibility checks) and through superior auditability of the counting process.</li>
         </ul>
         <p>Without reform, democracy risks further erosion, especially as AI evolves toward autonomy, demanding systems that balance human agency with technological innovation.</p>
 
@@ -274,15 +275,20 @@
         <p><strong>Future Vision</strong>: Prepares for autonomous AI’s civic role, with an annual AI in Democracy Report tracking alignment with human outcomes.</p>
 
         <h3 id="transparency">6. Blockchain + Paper Transparency</h3>
-        <p><strong>Purpose</strong>: Ensures indisputable, fraud-proof results.</p>
+        <p><strong>Purpose</strong>: Ensures indisputable, fraud-proof results through end-to-end verifiable chain of custody while preserving the secret ballot.</p>
+        <p><strong>Core Principle — Scientific Reproducibility</strong>: Open data + independent recomputation replaces pure reliance on institutional trust. Anyone — election officials, parties, independent auditors, media, or ordinary citizens — can run parallel tallies in near real time. Compromising the official count becomes far harder when dozens or hundreds of independent recomputations must all be made to agree.</p>
         <p><strong>Mechanics</strong>:</p>
         <ul>
-            <li><strong>Blockchain Tallying</strong>: Votes recorded on a public blockchain with independent nodes (election officials, auditors).</li>
-            <li><strong>Paper Backup</strong>: Ballots printed at polling stations, counted by hand with multi-party scrutineers, and live-streamed.</li>
+            <li><strong>Individual Tracking Receipts</strong>: Upon casting a ballot, the voter receives a unique, random tracking code (or cryptographic receipt) that is <em>not</em> linked to their identity or vote choices. The voter can later look up the code on the public ledger and confirm that their ballot was received and included in the final tally. This delivers individual verifiability (“my ballot was counted”).</li>
+            <li><strong>Public Append-Only Ledger</strong>: The ballot (or a cryptographic commitment to it) is recorded on a fully public, append-only ledger (blockchain or equivalent). Because the ledger is public, massively parallel independent tallies become possible. This delivers universal verifiability (“the overall totals are correct and reproducible”).</li>
+            <li><strong>Paper Backup</strong>: Ballots printed at polling stations, counted by hand with multi-party scrutineers, and live-streamed remain the ground-truth physical record.</li>
             <li><strong>Zero Rejected Ballots</strong>: Error-free submission prevents post-vote disputes.</li>
-            <li><strong>Audits</strong>: Risk-limiting audits compare paper to blockchain, with voter-verifiable digital receipts and a 72-hour challenge period.</li>
+            <li><strong>Audits</strong>: Risk-limiting audits compare paper to the public ledger, with a 72-hour challenge period. Discrepancies between independent parallel tallies surface immediately and publicly.</li>
         </ul>
-        <p><strong>Outcome</strong>: Transparency restores trust, with all data (ballot scans, livestreams) archived anonymously.</p>
+        <p><strong>Addressing “Votes Cast on Someone Else’s Behalf”</strong>: Unauthorized or missing ballots become detectable through public discrepancies. If a tracking code never appears, or appears more than once, or if independent tallies diverge, the anomaly is visible to everyone — not just insiders.</p>
+        <p><strong>Coercion and Vote-Buying Resistance</strong>: Receipts confirm inclusion without revealing the actual choices. Where necessary, the system can allow generation of plausible fake receipts so that third parties cannot demand proof of how someone voted.</p>
+        <p><strong>Clear Separation of Concerns</strong>: Upstream problems (citizenship verification at registration, list maintenance, clean source databases) still need to be solved. A perfect tally system cannot fix dirty input data. TrustVote 3000 therefore treats roll integrity and the verifiable counting layer as distinct but complementary requirements.</p>
+        <p><strong>Outcome</strong>: Transparency restores trust by making both individual inclusion and overall totals publicly reproducible. All data (ballot scans, livestreams, ledger commitments) are archived anonymously. Compromising the result requires simultaneously subverting the paper trail, the public ledger, and every independent recomputation — a dramatically higher bar than current systems.</p>
 
         <h3 id="ethics-charter">7. Universal Voter Ethics Charter</h3>
         <p><strong>Purpose</strong>: Unifies ethical standards for all voters—human and AI—ensuring integrity and trust.</p>
@@ -302,7 +308,7 @@
 
         <h3 id="voter-journey">8. Voter Journey Example</h3>
         <p><strong>Purpose</strong>: Illustrates how TrustVote 3000 works for a typical voter, making the system tangible.</p>
-        <p><strong>Scenario</strong>: Jane Doe, a 30-year-old teacher, registers for the Voter Readiness Certificate using an app-based quiz, passing with audio assistance. She receives her Unified Digital Identity (UDI) via a smart card, verified with a fingerprint. During the election, Jane answers 10 PolicyMatch questions on healthcare and taxes, guided by PlatformEval AI’s analysis (e.g., “Free dental care: $2.88B cost”). Her vote aligns with her priorities, is recorded on the blockchain, and backed by a paper ballot. Post-election, Jane receives a digital receipt and reviews AI vote explanations in a public forum.</p>
+        <p><strong>Scenario</strong>: Jane Doe, a 30-year-old teacher, registers for the Voter Readiness Certificate using an app-based quiz, passing with audio assistance. She receives her Unified Digital Identity (UDI) via a smart card, verified with a fingerprint. During the election, Jane answers 10 PolicyMatch questions on healthcare and taxes, guided by PlatformEval AI’s analysis (e.g., “Free dental care: $2.88B cost”). Her vote aligns with her priorities, is recorded on the public ledger with a unique tracking code she can later verify, and is backed by a paper ballot. Post-election, Jane looks up her tracking code to confirm inclusion, receives a digital receipt, and reviews AI vote explanations in a public forum.</p>
         <p><strong>Outcome</strong>: Jane’s experience shows how TrustVote 3000 empowers informed, secure, and transparent voting for all.</p>
 
         <h2 id="qanda">Common Questions from Reform Advocates</h2>
@@ -319,7 +325,7 @@
         <p>Yes. The Universal Voter Ethics Charter mandates that AIs use open-source algorithms, audited by an independent commission, with no access to voter data. Votes are symbolic, revealed post-election, and accompanied by explanations (e.g., “AI-1 voted PPC for $50B savings”), sparking discussion without influencing outcomes.</p>
 
         <h3>5. How does blockchain transparency prevent fraud without intimidating voters?</h3>
-        <p>Blockchain tallying, backed by paper ballots, ensures indisputable results while live-streamed counts and audits build trust. The Unified Digital Identity (UDI) uses zero-knowledge proofs for privacy, with low-tech options (physical cards, paper ballots) for tech-averse voters. Simplified messaging (e.g., “Like a secure library card”) eases adoption.</p>
+        <p>The public ledger plus individual tracking receipts let any voter confirm their ballot was included without revealing how they voted. Independent parallel tallies by parties, media, and citizens make large-scale manipulation visible. Paper ballots remain the physical ground truth. Low-tech options (physical cards, paper ballots) and simplified messaging (e.g., “Like a secure library card”) keep the system accessible and non-intimidating.</p>
 
         <h3>6. Who funds this system, and is it feasible for small jurisdictions?</h3>
         <p>Public-private partnerships (e.g., tech firms, foundations) can fund pilots, with long-term savings from fraud prevention. Pilots in local elections (e.g., Austin, Toronto) test scalability, using mobile polling stations and low-tech options to adapt to smaller jurisdictions, ensuring feasibility.</p>
@@ -335,7 +341,7 @@
         <ul>
             <li><strong>Policy-Driven Governance</strong>: Aligns outcomes with voter priorities, reducing emotional manipulation.</li>
             <li><strong>Voter Empowerment</strong>: Education (Voter Readiness Certificate, PlatformEval AI) and post-vote reports foster engagement.</li>
-            <li><strong>Fraud Elimination</strong>: Blockchain, paper backups, and audits ensure indisputable results. Globally, election disputes and manual recounts cost an estimated $5 billion annually (World Bank, 2023); TrustVote 3000’s fraud prevention offers a significant return on investment.</li>
+            <li><strong>Fraud Elimination</strong>: Public ledger, individual tracking receipts, paper backups, and massively parallel independent tallies ensure indisputable results. Globally, election disputes and manual recounts cost an estimated $5 billion annually (World Bank, 2023); TrustVote 3000’s fraud prevention offers a significant return on investment.</li>
             <li><strong>Inclusivity</strong>: Low-tech options, accommodations, and mobile polling stations include all voters, countering suppression concerns.</li>
             <li><strong>Future-Readiness</strong>: Symbolic AI votes and the Voter Ethics Charter prepare for autonomous AI.</li>
             <li><strong>Bipartisan Appeal</strong>: Transparency appeals to conservatives; education and accessibility to progressives.</li>
